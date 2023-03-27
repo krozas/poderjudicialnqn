@@ -36,11 +36,10 @@ export const routes: readonly ViewRouteObject[] = [
     element: <MainLayout />,
     handle: { icon: 'null', title: 'Main' },
     children: [
-     
-      { path: '/', element: <AboutView />, handle: { icon: 'file', title: 'About' } },
-      { path: '/edificio', element: <EdificioView />, handle: { icon: 'building', title: 'Edificio' } },
+      { path: '/', element: <EdificioView />, handle: { icon: 'building', title: 'Edificio' } },
       { path: '/dependencia', element: <DependenciaView />, handle: { icon: 'city-solid', title: 'Dependencia' } },
-    ],
+      { path: '/about', element: <AboutView />, handle: { icon: 'file', title: 'About' } },
+     ],
   },
 ];
 
