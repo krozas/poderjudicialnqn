@@ -39,7 +39,7 @@ Una vez que se construye el archivo JAR, se puede correr usando `java -jar targe
 ## Captura de pantalla del proyecto
 
 
-![Screenshoot](src/main/resources/META-INF/resources/images/capturaPJ.png) 
+![Screenshoot](src/main/resources/META-INF/resources/images/poderjudicial-v1app.png) 
 
 ## Información de la App
 
