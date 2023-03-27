@@ -1,0 +1,13 @@
+INSERT INTO edificio (id,nombre,domicilio) VALUES (1,'Edif. SANTIAGO DEL ESTERO 44', 'SANTIAGO DEL ESTERO 44');
+INSERT INTO edificio (id,nombre,domicilio) VALUES (2,'Edif. SANTIAGO DEL ESTERO 64', 'SANTIAGO DEL ESTERO 64');
+INSERT INTO edificio (id,nombre,domicilio) VALUES (3,'Edif. SANTIAGO DEL ESTERO 675', 'SANTIAGO DEL ESTERO 675');
+INSERT INTO edificio (id,nombre,domicilio) VALUES (4,'Edif. SARGENTO CABRAL 335', 'SARGENTO CABRAL 335');
+INSERT INTO edificio (id,nombre,domicilio) VALUES (5,'Edif. YRIGOYEN 175', 'YRIGOYEN 175');
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (1,'Dependencia_PJ 1', 'Domicilio Dependencia_PJ 1', 1);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (2,'Dependencia_PJ 2', 'Domicilio Dependencia_PJ 2', 1);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (3,'Dependencia_PJ 3', 'Domicilio Dependencia_PJ 3', 1);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (4,'Dependencia_PJ 4', 'Domicilio Dependencia_PJ 4', 2);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (5,'Dependencia_PJ 5', 'Domicilio Dependencia_PJ 5', 2);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (6,'Dependencia_PJ 6', 'Domicilio Dependencia_PJ 6', 3);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (7,'Dependencia_PJ 7', 'Domicilio Dependencia_PJ 7', 4);
+INSERT INTO dependencia (id,nombre,domicilio,edificio_id) VALUES (8,'Dependencia_PJ 8', 'Domicilio Dependencia_PJ 8', 4);
