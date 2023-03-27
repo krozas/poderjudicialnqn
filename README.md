@@ -1,29 +1,55 @@
-# Custom project from Hilla
+# Poder Judicial Neuquén
 
-This project can be used as a starting point to create your own Hilla application with Spring Boot.
-It contains all the necessary configuration and some placeholder files to get you started.
+App para concurso externo Expte. Nº 0578-22
 
-## Running the application
+# Demo - App en java con Hilla + React
+Una pequeña aplicación demo desarrollada en Java, utilizando el framework Hilla con Spring Boot y React: https://hilla.dev/docs/react. También se utilizó: Lombok: https://projectlombok.org/ Formix: https://formik.org/
 
-The project is a standard Maven project. To run it from the command line,
-type `mvnw` (Windows), or `./mvnw` (Mac & Linux), then open
-http://localhost:8080 in your browser.
+## Empezando
 
-You can also import the project to your IDE of choice as you would with any
-Maven project.
+Puedes clonar este proyecto desde `GitHub` usando el siguiente comando: 
+```bash
+git clone https://github.com/ivandi1980/to-react-hilla.git
+```
 
-## Deploying to Production
+or podes crear un nuevo proyecto Hilla usando `Vaadin CLI` :
 
-To create a production build, call `mvnw clean package -Pproduction` (Windows),
-or `./mvnw clean package -Pproduction` (Mac & Linux).
-This will build a JAR file with all the dependencies and front-end resources,
-ready to be deployed. The file can be found in the `target` folder after the build completes.
+```bash
+npx @vaadin/cli init --hilla my-hilla-app
+```
 
-Once the JAR file is built, you can run it using
-`java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTE, replace
-`myapp-1.0-SNAPSHOT.jar` with the name of your jar).
+También puede crear un proyecto con la configuración de seguridad básica agregada usando el `--auth` option :
 
-## Project structure
+```bash
+npx @vaadin/cli init --hilla my-hilla-app --auth
+```
+
+## Correr la aplicacion
+
+El proyecto es un proyecto Maven estándar. Para ejecutarlo desde la línea de comandos, tipear `mvnw` (Windows), o `./mvnw` (Mac & Linux), y luego abrir http://localhost:8080 en el navegador. Esto requiere tener Maven instalado.
+
+También se puede importar el proyecto al IDE de elección como lo haría con cualquier Proyecto Maven.
+
+## Deploying a Producción
+
+Para crear una compilación de producción, ejecutar `mvnw clean package -Pproduction` (Windows), o `./mvnw clean package -Pproduction`  (Mac & Linux). Esto creará un archivo JAR con todas las dependencias y recursos front-end, listo para ser desplegado. El archivo se puede encontrar en la carpeta `target` después de que se complete la compilación.
+Una vez que se construye el archivo JAR, se puede correr usando `java -jar target/myapp-1.0-SNAPSHOT.jar` (NOTE, reemplazar
+`myapp-1.0-SNAPSHOT.jar` con el nombre de tu jar).
+
+## Captura de pantalla del proyecto
+
+
+![Screenshoot](src/main/resources/META-INF/resources/images/capturaPJ.png) 
+
+## Información de la App
+
+Edificio: Permite crear, modificar y eliminar edificios nuevos edicios.
+
+Dependencia: Permite crear, modificar y eliminar edificios nuevas dependencias.
+
+En ambos casos,  se muestran datos de edificios y dependencias ya cargados, se utilizó una base de datos en memoria.
+
+## Estructura del Proyecto
 
 <table style="width:100%; text-align: left;">
   <tr><th>Directory</th><th>Description</th></tr>
@@ -44,8 +70,8 @@ source directory, contains the server-side Java views</td></tr>
   <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<code>Application.java</code></td><td>Server entry-point</td></tr>
 </table>
 
-## Useful links
+## Enlaces utiles
 
-- Read the documentation at [hilla.dev/docs](https://hilla.dev/docs/).
-- Ask questions on [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) or join our [Discord channel](https://discord.gg/MYFq5RTbBn).
-- Report issues, create pull requests in [GitHub](https://github.com/vaadin/hilla).
+- Leer la documentacion en [hilla.dev/docs](https://hilla.dev/docs/).
+- Responder preguntas [Stack Overflow](https://stackoverflow.com/questions/tagged/hilla) o unite a [Discord channel](https://discord.gg/MYFq5RTbBn).
+- Informar problemas, crear solicitudes de incorporación de cambios en [GitHub](https://github.com/vaadin/hilla).
