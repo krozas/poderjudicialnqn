@@ -9,19 +9,20 @@ Una pequeña aplicación demo desarrollada en Java, utilizando el framework Hill
 
 Puedes clonar este proyecto desde `GitHub` usando el siguiente comando: 
 ```bash
-git clone https://github.com/ivandi1980/to-react-hilla.git
+git clone https://github.com/krozas/poderjudicialnqn.git
+
 ```
 
 or podes crear un nuevo proyecto Hilla usando `Vaadin CLI` :
 
 ```bash
-npx @vaadin/cli init --hilla my-hilla-app
+npx @vaadin/cli init --pjnqn-app
 ```
 
 También puede crear un proyecto con la configuración de seguridad básica agregada usando el `--auth` option :
 
 ```bash
-npx @vaadin/cli init --hilla my-hilla-app --auth
+npx @vaadin/cli init --pjnqn-app --auth
 ```
 
 ## Correr la aplicacion
