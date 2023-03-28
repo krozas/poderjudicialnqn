@@ -43,9 +43,9 @@ Una vez que se construye el archivo JAR, se puede correr usando `java -jar targe
 
 ## Información de la App
 
-Edificio: Permite crear, modificar y eliminar edificios nuevos edicios.
+Edificio: Permite crear, modificar y eliminar edificios.
 
-Dependencia: Permite crear, modificar y eliminar edificios nuevas dependencias.
+Dependencia: Permite crear, modificar y eliminar dependencias.
 
 En ambos casos,  se muestran datos de edificios y dependencias ya cargados, se utilizó una base de datos en memoria.
 
