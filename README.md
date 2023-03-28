@@ -16,13 +16,13 @@ git clone https://github.com/krozas/poderjudicialnqn.git
 or podes crear un nuevo proyecto Hilla usando `Vaadin CLI` :
 
 ```bash
-npx @vaadin/cli init --pjnqn-app
+npx @hilla/cli init --pjnqn-app
 ```
 
 También puede crear un proyecto con la configuración de seguridad básica agregada usando el `--auth` option :
 
 ```bash
-npx @vaadin/cli init --pjnqn-app --auth
+npx @hilla/cli init --pjnqn-app --auth
 ```
 
 ## Correr la aplicacion
