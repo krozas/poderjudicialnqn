@@ -9,19 +9,20 @@ Una pequeña aplicación demo desarrollada en Java, utilizando el framework Hill
 
 Puedes clonar este proyecto desde `GitHub` usando el siguiente comando: 
 ```bash
-git clone https://github.com/ivandi1980/to-react-hilla.git
+git clone https://github.com/krozas/poderjudicialnqn.git
+
 ```
 
 or podes crear un nuevo proyecto Hilla usando `Vaadin CLI` :
 
 ```bash
-npx @vaadin/cli init --hilla my-hilla-app
+npx @hilla/cli init --pjnqn-app
 ```
 
 También puede crear un proyecto con la configuración de seguridad básica agregada usando el `--auth` option :
 
 ```bash
-npx @vaadin/cli init --hilla my-hilla-app --auth
+npx @hilla/cli init --pjnqn-app --auth
 ```
 
 ## Correr la aplicacion
@@ -43,9 +44,9 @@ Una vez que se construye el archivo JAR, se puede correr usando `java -jar targe
 
 ## Información de la App
 
-Edificio: Permite crear, modificar y eliminar edificios nuevos edicios.
+Edificio: Permite crear, modificar y eliminar edificios.
 
-Dependencia: Permite crear, modificar y eliminar edificios nuevas dependencias.
+Dependencia: Permite crear, modificar y eliminar dependencias.
 
 En ambos casos,  se muestran datos de edificios y dependencias ya cargados, se utilizó una base de datos en memoria.
 
