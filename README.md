@@ -31,6 +31,10 @@ El proyecto es un proyecto Maven estándar. Para ejecutarlo desde la línea de c
 
 También se puede importar el proyecto al IDE de elección como lo haría con cualquier Proyecto Maven.
 
+Se agrega al repositorio un jar para testear la app sin necesidad de tener maven instalado dentro de la carpeta jarProduction. Se ejecuta usando java -jar jar_prod/poderjudicialapp-1.0-SNAPSHOT.jar (NOTA, reemplace jar_prod por el camino donde coloca el jar para ejecutar), luego abrir http://localhost:8080 en el navegador. Se requiere Java 17.X de 64bit instalado en su pc.
+
+
+
 ## Deploying a Producción
 
 Para crear una compilación de producción, ejecutar `mvnw clean package -Pproduction` (Windows), o `./mvnw clean package -Pproduction`  (Mac & Linux). Esto creará un archivo JAR con todas las dependencias y recursos front-end, listo para ser desplegado. El archivo se puede encontrar en la carpeta `target` después de que se complete la compilación.
