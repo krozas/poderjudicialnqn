@@ -29,11 +29,19 @@ export default function DependenciaView() {
     initialValues: empty,
     onSubmit: async (value: Dependencia, { setSubmitting, setErrors }) => {
       try {
+        console.log("Aqui estoy key "+value.id);
+        console.log("Aqui estoy edificio key "+JSON.stringify(value.edificio));
+        //const theItem = (await EdificioEndpoint.findById(Number(value.edificio)));
+        //value.edificio = theItem ;
         const saved = (await DependenciaEndpoint.save(value)) ?? value;
-        if (value.id!=null)
-         setDependencias(dependencias.map((item) => (item.id === value.id ? saved : item)));
-        else 
+        console.log("Aqui estoy key"+value.id);
+        
+        if(value.id != null) {
+          setDependencias(dependencias.map((item) => (item.id === value.id ? saved : item)));
+          
+        } else {
           setDependencias([...dependencias, saved]);
+        }
         createForm.resetForm();
       } catch (e: unknown) {
         if (e instanceof EndpointValidationError) {
@@ -63,8 +71,9 @@ export default function DependenciaView() {
   }
 
   async function carryDependencia(dependencia: Dependencia) {
-    console.log("carryDependencia:dependencia.id "+dependencia.id);
+    console.log(dependencia.edificio);
     createForm.setValues(dependencia);
+     
   }
 
   async function deleteDependencia(dependencia: Dependencia) {
@@ -101,11 +110,13 @@ export default function DependenciaView() {
           onBlur={createForm.handleChange}
         />
          <ComboBox
-          name="edificio"
-          label="Edificio"
-          items={edificios}
+          allowCustomValue
+          label='Edificios'
           itemLabelPath='nombre'
           itemValuePath='id'
+          value={createForm.values.edificio?.nombre}
+          items={edificios}
+          placeholder='Clic (+)'
           style={{ width: '20%' }} 
           onSelectedItemChanged={
             (e) => setDataEdificio(e.detail.value?.id)          
